@@ -1,34 +1,63 @@
+/******* GENERAL *******/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: rgb(59, 55, 55);
   color: white;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+/******* HEADER *******/
+
 .header {
-  background-color: black;
+  background-color: rgb(36, 34, 34);
   padding: 20px;
   color: grey;
   text-align: center;
 }
-.header h1 {
+.header__title {
   color: rgb(220, 147, 220);
+  padding: 10px;
 }
 
-.header.nav ul {
-  background-color: aqua;
+.header__title h2 {
+  color: grey;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.header span {
+  font-style: italic;
+}
+
+.header__nav ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-li {
+
+.header__nav li {
+  background-color: antiquewhite;
   margin: auto;
+  padding: 5px 30px;
+  border-radius: 5px;
 }
+
+.header__nav li:hover {
+  background-color: #7fdbff;
+}
+
+.header__nav a {
+  text-decoration: none;
+}
+
+/******* MAIN *******/
+
 .section {
   background-color: aliceblue;
   color: grey;
@@ -37,11 +66,17 @@ li {
   flex-direction: column;
 }
 
-span {
-  font-style: italic;
-}
+/******* FOOOTER *******/
 
 .footer {
-  background-color: black;
+  background-color: rgb(36, 34, 34);
   padding: 10px 20px;
+}
+
+.footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

@@ -1,45 +1,83 @@
 /* ##### GENERAL #### */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color: antiquewhite;
+    background-color: antiquewhite;
 }
 /* ##### HEADER #### */
 
 .header__title {
-  text-align: center;
-  padding: 5%;
-  font-style: italic;
+    text-align: center;
+    padding: 5%;
+    font-style: italic;
 }
 
-/* ##### MAIN #### */
+/* ##### MAIN BLOCK 1 #### */
 
 .article__container {
-  display: flex;
+    display: flex;
 }
 .article__box {
-  margin: 0;
-  border-style: solid;
-  border-color: black;
-  text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+.article__box.box2 {
+    width: 50%;
+    border-left: none;
+    border-right: none;
+}
+
+.article__box.box2 p {
+    padding: 2%;
+    text-align: justify;
 }
 .article__box h2 {
-  padding: 5%;
-  font-style: italic;
+    padding: 5%;
+    font-style: italic;
 }
 .article__box p {
-  padding-left: 5%;
-  padding-right: 5%;
+    padding: 5% 5% 5% 5%;
+    text-align: justify;
 }
 
 .responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
+}
+/* ##### MAIN BLOCK 2 #### */
+
+.article__box.box4 {
+    border-top: none;
+}
+.article__container .div__container {
+    width: 75%;
+    color: aliceblue;
+    margin: auto;
+}
+
+.div__box.a {
+    background-color: purple;
+}
+.div__box.b {
+    background-color: rgb(164, 18, 164);
+}
+.div__box.c {
+    background-color: rgb(224, 60, 224);
+}
+.div__box.d {
+    background-color: rgb(234, 130, 234);
+}
+.div__box.e {
+    background-color: rgb(247, 184, 247);
 }
 /* ##### FOOTER #### */

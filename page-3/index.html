@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
+	<title>Survey Form FreeCodeCamp</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<h1 class="title">
+			Buba's FreeCodeCamp Survey Form
+		</h1>
+		<h2 class="subtitle">
+			Thank you for taking time to answer this Survey
+		</h2>
+	</header>
+	<main class="square">
+		<form class="survey-form">
+
+			<div class="div__form-part">
+				<label class="label" for="label-name">
+					Name
+				</label>
+				<input type="text" name="user" required placeholder="Your name" id="label-name" />
+			</div>
+
+			<div class="div__form-part">
+				<label class="label" for="label-mail">
+					Email
+				</label>
+				<input type="email" name="email" required placeholder="Your email" id="label-mail" />
+			</div>
+
+			<div class="div__form-part">
+				<label class="label" for="label-age">
+					Age(<span class="span">optional</span>)
+				</label>
+				<input type="number" name="age" placeholder="Your age" id="label-age" />
+			</div>
+
+			<div class="div__form-part">
+				<label class="label" for="label-role">
+					Which option best describes your current role?
+				</label>
+				<select name="role" id="label-role">
+					<option value="selected" selected>
+						Select current role
+					</option>
+					<option name="student" value="student">
+						Student
+					</option>
+					<option name="fulltimejob" value="fulltimejob">
+						Full Time Job
+					</option>
+					<option name="fulltimelearner" value="fulltimelearner">
+						Full Time Learner
+					</option>
+					<option name="nottosay" value="nottosay">
+						Prefer not to say
+					</option>
+					<option name="other" value="other">
+						Other
+					</option>
+				</select>
+			</div>
+
+			<div class="div__form-part radio">
+				Would you recommend freeCodeCamp to a friend?
+
+				<label class="label__radio" for="definitely">
+					<input type="radio" id="definitely" name="radiochoice" value="1" /> Definitely
+				</label>
+
+				<label class="label__radio" for="maybe">
+					<input type="radio" id="maybe" name="radiochoice" value="2" /> Maybe
+				</label>
+
+				<label class="label__radio" for="not-sure">
+					<input type="radio" id="not-sure" name="radiochoice" value="3" /> Not Sure
+				</label>
+			</div>
+
+			<div class="div__form-part">
+				<label class="label" for="label-fav">
+					What is your favorite feature of freeCodeCamp?
+				</label>
+				<select name="feat" id="label-feat">
+					<option value="selected" selected>
+						Select an option
+					</option>
+					<option value="challenges">
+						Challenges
+					</option>
+					<option value="project">
+						Project
+					</option>
+					<option value="Community">
+						Community
+					</option>
+					<option value="opensource">
+						Open Source
+					</option>
+				</select>
+			</div>
+
+			<div class="div__form-part">
+				<label class="label__checkbox" for="label-check">
+					What would you like to see improved?
+					(<span class="span">Check all that apply</span>)
+				</label>
+			</div>
+
+			<div class="div__form-part">
+				<label class="label" for="label-comments">
+					Any comments or suggestions?
+				</label>
+				<textarea name="comments" placeholder="Enter your comment here"></textarea>
+			</div>
+
+			<div class="div__form-part button">
+				<button>Submit</button>
+			</div>
+
+		</form>
+	</main>
+</body>
+
+</html>

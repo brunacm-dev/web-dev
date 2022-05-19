@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        sans-serif;
+}
+
+body {
+    background-color: rgb(194, 249, 249);
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.subtitle {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.survey-form {
+    background-color: aquamarine;
+    margin: 5%;
+    /*   display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+.div__form-part {
+    margin: 10px;
+}
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+.label__radio {
+    display: block;
+    margin: 5px 0px 2px 5px;
+}
+.span {
+    font-size: smaller;
+}

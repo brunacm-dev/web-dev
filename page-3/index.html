@@ -19,35 +19,35 @@
 			Thank you for taking time to answer this Survey
 		</h2>
 	</header>
-	<main class="square">
+	<fieldset class="form">
 		<form class="survey-form">
 
 			<div class="div__form-part">
 				<label class="label" for="label-name">
 					Name
 				</label>
-				<input type="text" name="user" required placeholder="Your name" id="label-name" />
+				<input type="text" name="user" required placeholder="Your name" id="label-name" class="bloco" />
 			</div>
 
 			<div class="div__form-part">
 				<label class="label" for="label-mail">
 					Email
 				</label>
-				<input type="email" name="email" required placeholder="Your email" id="label-mail" />
+				<input type="email" name="email" required placeholder="Your email" id="label-mail" class="bloco" />
 			</div>
 
 			<div class="div__form-part">
 				<label class="label" for="label-age">
 					Age(<span class="span">optional</span>)
 				</label>
-				<input type="number" name="age" placeholder="Your age" id="label-age" />
+				<input type="number" name="age" placeholder="Your age" id="label-age" class="bloco" />
 			</div>
 
 			<div class="div__form-part">
 				<label class="label" for="label-role">
 					Which option best describes your current role?
 				</label>
-				<select name="role" id="label-role">
+				<select name="role" id="label-role" class="bloco">
 					<option value="selected" selected>
 						Select current role
 					</option>
@@ -89,7 +89,7 @@
 				<label class="label" for="label-fav">
 					What is your favorite feature of freeCodeCamp?
 				</label>
-				<select name="feat" id="label-feat">
+				<select name="feat" id="label-feat" class="bloco">
 					<option value="selected" selected>
 						Select an option
 					</option>
@@ -119,15 +119,16 @@
 				<label class="label" for="label-comments">
 					Any comments or suggestions?
 				</label>
-				<textarea name="comments" placeholder="Enter your comment here"></textarea>
+				<textarea name="comments" placeholder="Enter your comment here" class="bloco area"></textarea>
 			</div>
 
-			<div class="div__form-part button">
-				<button>Submit</button>
+			<div class="div__form-part">
+				<button class="button">Submit</button>
 			</div>
 
 		</form>
-	</main>
+	</fieldset>
+
 </body>
 
 </html>

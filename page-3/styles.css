@@ -7,26 +7,33 @@
 }
 
 body {
-    background-color: rgb(194, 249, 249);
+    background-color: #92dce5;
 }
 
 .header {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    color: #2b303a;
 }
 .subtitle {
     margin-top: 10px;
     font-style: italic;
     font-size: 20px;
+    color: #2b303a;
 }
-
+.form {
+    background-color: #2b303a;
+    margin: 20px;
+    max-width: 700px;
+    border: none;
+    border-radius: 10px;
+}
 .survey-form {
-    background-color: aquamarine;
-    margin: 5%;
     /*   display: flex;
     flex-direction: column;
     align-items: center;*/
+    margin: 10%;
+    color: #eee5e9;
 }
 .div__form-part {
     margin: 10px;
@@ -39,6 +46,26 @@ body {
     display: block;
     margin: 5px 0px 2px 5px;
 }
+.bloco {
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    border: 1px solid lightgray;
+}
+.area {
+    height: 150px;
+    resize: none;
+}
 .span {
     font-size: smaller;
+}
+
+.button {
+    background-color: #d64933;
+    height: 50px;
+    width: 500px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    color: #eee5e9;
 }

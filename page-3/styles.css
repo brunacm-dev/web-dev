@@ -1,3 +1,5 @@
+/* #### GENERAL #### */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,54 +12,67 @@ body {
     background-color: #92dce5;
 }
 
+.text {
+    color: #d64933;
+}
+
+/* #### HEADER #### */
+
 .header {
     text-align: center;
     margin-top: 5%;
     color: #2b303a;
 }
+
 .subtitle {
-    margin-top: 10px;
+    margin-top: 1%;
+    margin-bottom: 5%;
     font-style: italic;
     font-size: 20px;
-    color: #2b303a;
 }
-.form {
+
+/* #### FORM #### */
+
+.span {
+    font-size: smaller;
+}
+
+.survey__form {
     background-color: #2b303a;
-    margin: 20px;
-    max-width: 700px;
+    color: #eee5e9;
     border: none;
     border-radius: 10px;
+    width: 500px;
+    margin: auto;
 }
-.survey-form {
-    /*   display: flex;
-    flex-direction: column;
-    align-items: center;*/
-    margin: 10%;
-    color: #eee5e9;
+
+.form__part {
+    margin: 20px 10px 20px 10px;
 }
-.div__form-part {
-    margin: 10px;
-}
-.label {
+
+.label,
+.label__radio,
+.label__check {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
-.label__radio {
-    display: block;
-    margin: 5px 0px 2px 5px;
+
+.label__radio,
+.label__check {
+    margin: 5px;
 }
+
 .bloco {
     padding: 10px;
     border-radius: 5px;
     width: 500px;
     border: 1px solid lightgray;
 }
+
 .area {
     height: 150px;
     resize: none;
-}
-.span {
-    font-size: smaller;
+    margin-bottom: 50px;
 }
 
 .button {
@@ -65,7 +80,23 @@ body {
     height: 50px;
     width: 500px;
     font-size: large;
+    text-decoration: none;
     border: none;
     border-radius: 10px;
     color: #eee5e9;
+}
+
+.button:hover {
+    background-color: #92dce5;
+}
+.link {
+    text-decoration: none;
+}
+.link:visited {
+    color: #2b303a;
+}
+
+.link:hover {
+    color: #2b303a;
+    color: #d64933;
 }

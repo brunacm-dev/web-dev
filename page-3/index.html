@@ -11,123 +11,179 @@
 
 <body>
 
-	<header class="header">
-		<h1 class="title">
-			Buba's FreeCodeCamp Survey Form
-		</h1>
-		<h2 class="subtitle">
-			Thank you for taking time to answer this Survey
-		</h2>
-	</header>
-	<fieldset class="form">
-		<form class="survey-form">
+	<div class="container">
+		<header class="header">
+			<h1 class="title">
+				Buba's FreeCodeCamp Survey Form
+			</h1>
+			<h2 class="subtitle">
+				Thank you for taking time to answer this Survey
+			</h2>
+		</header>
+	</div>
+	<div class="container">
+		<fieldset class="survey__form">
+			<form action="#">
 
-			<div class="div__form-part">
-				<label class="label" for="label-name">
-					Name
-				</label>
-				<input type="text" name="user" required placeholder="Your name" id="label-name" class="bloco" />
-			</div>
+				<div class="form__part">
+					<label class="label" for="label-name">
+						<h4 class="text">Name</h4>
+					</label>
+					<input type="text" name="user" required placeholder="Your name" id="label-name" class="bloco" />
+				</div>
 
-			<div class="div__form-part">
-				<label class="label" for="label-mail">
-					Email
-				</label>
-				<input type="email" name="email" required placeholder="Your email" id="label-mail" class="bloco" />
-			</div>
+				<div class="form__part">
+					<label class="label" for="label-mail">
+						<h4 class="text">Email</h4>
+					</label>
+					<input type="email" name="email" required placeholder="Your email" id="label-mail" class="bloco" />
+				</div>
 
-			<div class="div__form-part">
-				<label class="label" for="label-age">
-					Age(<span class="span">optional</span>)
-				</label>
-				<input type="number" name="age" placeholder="Your age" id="label-age" class="bloco" />
-			</div>
+				<div class="form__part">
+					<label class="label" for="label-age">
+						<h4 class="text">Age(<span class="span">optional</span>)</h4>
+					</label>
+					<input type="number" name="age" placeholder="Your age" id="label-age" class="bloco" />
+				</div>
 
-			<div class="div__form-part">
-				<label class="label" for="label-role">
-					Which option best describes your current role?
-				</label>
-				<select name="role" id="label-role" class="bloco">
-					<option value="selected" selected>
-						Select current role
-					</option>
-					<option name="student" value="student">
-						Student
-					</option>
-					<option name="fulltimejob" value="fulltimejob">
-						Full Time Job
-					</option>
-					<option name="fulltimelearner" value="fulltimelearner">
-						Full Time Learner
-					</option>
-					<option name="nottosay" value="nottosay">
-						Prefer not to say
-					</option>
-					<option name="other" value="other">
-						Other
-					</option>
-				</select>
-			</div>
+				<div class="form__part select">
+					<label class="label" for="label-role">
+						<h4 class="text">Which option best describes your current role?</h4>
+					</label>
+					<select name="option-role" id="label-role" class="bloco">
+						<option value="selected" selected disabled="true">
+							Select current role
+						</option>
+						<option value="student">
+							Student
+						</option>
+						<option value="fulltimejob">
+							Full Time Job
+						</option>
+						<option value="fulltimelearner">
+							Full Time Learner
+						</option>
+						<option value="nottosay">
+							Prefer not to say
+						</option>
+						<option value="other">
+							Other
+						</option>
+					</select>
+				</div>
 
-			<div class="div__form-part radio">
-				Would you recommend freeCodeCamp to a friend?
+				<div class="form__part radio">
+					<h4 class="text">Would you recommend freeCodeCamp to a friend?</h4>
 
-				<label class="label__radio" for="definitely">
-					<input type="radio" id="definitely" name="radiochoice" value="1" /> Definitely
-				</label>
+					<label class="label__radio" for="definitely">
+						<input type="radio" id="definitely" name="radiochoice" value="definitely" /> Definitely
+					</label>
 
-				<label class="label__radio" for="maybe">
-					<input type="radio" id="maybe" name="radiochoice" value="2" /> Maybe
-				</label>
+					<label class="label__radio" for="maybe">
+						<input type="radio" id="maybe" name="radiochoice" value="maybe" /> Maybe
+					</label>
 
-				<label class="label__radio" for="not-sure">
-					<input type="radio" id="not-sure" name="radiochoice" value="3" /> Not Sure
-				</label>
-			</div>
+					<label class="label__radio" for="not-sure">
+						<input type="radio" id="not-sure" name="radiochoice" value="not-sure" /> Not Sure
+					</label>
+				</div>
 
-			<div class="div__form-part">
-				<label class="label" for="label-fav">
-					What is your favorite feature of freeCodeCamp?
-				</label>
-				<select name="feat" id="label-feat" class="bloco">
-					<option value="selected" selected>
-						Select an option
-					</option>
-					<option value="challenges">
+				<div class="form__part select">
+					<label class="label" for="label-feat">
+						<h4 class="text">What is your favorite feature of freeCodeCamp?</h4>
+					</label>
+					<select name="option-feat" id="label-feat" class="bloco">
+						<option value="selected" selected disabled="true">
+							Select an option
+						</option>
+						<option value="challenges">
+							Challenges
+						</option>
+						<option value="project">
+							Project
+						</option>
+						<option value="Community">
+							Community
+						</option>
+						<option value="opensource">
+							Open Source
+						</option>
+					</select>
+				</div>
+
+				<div class="form__part checkbox">
+					<h4 class="text">What would you like to see improved?
+						(<span class="span">Check all that apply</span>)</h4>
+
+					<label for="check1" class="label__check">
+						<input type="checkbox" id="check1" name="check" value="frontend-proj">
+						Front-end Projects
+					</label>
+
+					<label for="check2" class="label__check">
+						<input type="checkbox" id="check2" name="check" value="backend-proj">
+						Back-end Projects
+					</label>
+
+					<label for="check3" class="label__check">
+						<input type="checkbox" id="check3" name="check" value="datavisual">
+						Data Visualization
+					</label>
+
+					<label for="check4" class="label__check">
+						<input type="checkbox" id="check4" name="check" value="challenges">
 						Challenges
-					</option>
-					<option value="project">
-						Project
-					</option>
-					<option value="Community">
-						Community
-					</option>
-					<option value="opensource">
-						Open Source
-					</option>
-				</select>
-			</div>
+					</label>
 
-			<div class="div__form-part">
-				<label class="label__checkbox" for="label-check">
-					What would you like to see improved?
-					(<span class="span">Check all that apply</span>)
-				</label>
-			</div>
+					<label for="check5" class="label__check">
+						<input type="checkbox" id="check5" name="check" value="opensrc">
+						Open Source Community
+					</label>
 
-			<div class="div__form-part">
-				<label class="label" for="label-comments">
-					Any comments or suggestions?
-				</label>
-				<textarea name="comments" placeholder="Enter your comment here" class="bloco area"></textarea>
-			</div>
+					<label for="check6" class="label__check">
+						<input type="checkbox" id="check6" name="check" value="gitter-help">
+						Gitter help rooms
+					</label>
 
-			<div class="div__form-part">
-				<button class="button">Submit</button>
-			</div>
+					<label for="check7" class="label__check">
+						<input type="checkbox" id="check7" name="check" value="videos">
+						Videos
+					</label>
 
-		</form>
-	</fieldset>
+					<label for="check8" class="label__check">
+						<input type="checkbox" id="check8" name="check" value="city-meetup">
+						City Meetups
+					</label>
+
+					<label for="check9" class="label__check">
+						<input type="checkbox" id="check9" name="check" value="wiki">
+						Wiki
+					</label>
+
+					<label for="check10" class="label__check">
+						<input type="checkbox" id="check10" name="check" value="forum">
+						Forum
+					</label>
+
+					<label for="check11" class="label__check">
+						<input type="checkbox" id="check11" name="check" value="add-courses">
+						Additional Courses
+					</label>
+				</div>
+
+				<div class="form__part area">
+					<label class="label" for="label-comments">
+						<h4 class="text">Any comments or suggestions?</h4>
+					</label>
+					<textarea name="comments" placeholder="Enter your comment here" class="bloco area"></textarea>
+				</div>
+
+				<div class="form__part button">
+					<button class="button"><a class="link" href="#">Submit</button>
+				</div>
+			</form>
+		</fieldset>
+	</div>
 
 </body>
 

@@ -1,0 +1,82 @@
+/* ### GENERAL ###*/
+:root {
+    --watergreen: #4ad9b0;
+    --lightgreen: #38a687;
+    --blue: #2e4159;
+    --black: #262626;
+    --white: #dedbdb;
+    --purple: #7756bf;
+    --font1: "Righteous", cursive;
+    --font2: "Patrick Hand", cursive;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font2);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* ### INTRO ### */
+.intro {
+    margin: 20px;
+}
+.intro span {
+    font-family: var(--font1);
+    display: block;
+    font-size: 60px;
+    color: var(--purple);
+    margin: auto;
+}
+
+.intro .area {
+    display: inline;
+    font-size: 30px;
+    color: var(--watergreen);
+}
+
+/* ### CONTACT ### */
+
+.contact {
+    text-align: center;
+    background-color: var(--purple);
+    padding: 20px;
+    border-top: 2px solid var(--watergreen);
+    border-bottom: 2px solid var(--watergreen);
+}
+.contact p:last-child {
+    margin-top: 30px;
+}
+.link {
+    text-decoration: none;
+    padding: 2px;
+    border: solid 2px;
+    border-radius: 5px;
+}
+.link:hover {
+    background-color: var(--lightgreen);
+}
+
+/* ### CALCULATOR ### */
+.calculator {
+    background-color: var(--blue);
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+}
+.calculator h2 {
+    border-bottom: 2px solid var(--black);
+}

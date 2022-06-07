@@ -74,9 +74,38 @@ body {
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
-    width: 600px;
-    height: 400px;
+    max-width: 80%;
+    height: auto;
 }
 .calculator h2 {
     border-bottom: 2px solid var(--black);
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.div__block {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: aqua;
+    font-size: 0;
+}
+.div__box1,
+.div__box2,
+.div__box3,
+.div__box4,
+.div__box5 {
+    display: flex;
+}
+.button {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    flex-grow: 1;
+}
+.button.big {
+    background-color: #7756bf;
+    flex-grow: 2;
 }

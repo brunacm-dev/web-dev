@@ -89,6 +89,10 @@ body {
     border: 2px solid var(--blue);
     color: var(--purple);
 }
+.button:hover {
+    background-color: lightgray;
+}
+
 .screen {
     width: 400px;
     height: 60px;
@@ -101,7 +105,10 @@ body {
 
 .op {
     background-color: var(--purple);
-    color: var(--white);
+    color: var(--black);
+}
+.op:hover {
+    background-color: var(--lightgreen);
 }
 
 .clear {

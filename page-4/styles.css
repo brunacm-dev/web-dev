@@ -69,43 +69,44 @@ body {
 }
 
 /* ### CALCULATOR ### */
+
 .calculator {
-    background-color: var(--blue);
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-    max-width: 80%;
-    height: auto;
-}
-.calculator h2 {
-    border-bottom: 2px solid var(--black);
-    margin: 20px;
-    padding: 5px;
+    margin: 30px;
     text-align: center;
 }
-.div__block {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: center;
-    margin-bottom: 20px;
-    background-color: aqua;
+.calculator h3 {
+    font-family: var(--font1);
+    border: 2px solid var(--watergreen);
+}
+.buttons__box {
     font-size: 0;
-}
-.div__box1,
-.div__box2,
-.div__box3,
-.div__box4,
-.div__box5 {
-    display: flex;
+    max-width: 100%;
 }
 .button {
     margin: 0;
-    width: 60px;
+    width: 100px;
     height: 60px;
-    flex-grow: 1;
+    border: 2px solid var(--blue);
+    color: var(--purple);
 }
-.button.big {
-    background-color: #7756bf;
-    flex-grow: 2;
+.screen {
+    width: 400px;
+    height: 60px;
+    text-align: right;
+    font-size: medium;
+    padding-right: 10px;
+    border: 2px solid var(--blue);
+    color: var(--white);
+}
+
+.op {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.clear {
+    width: 200px;
+}
+.zero {
+    width: 300px;
 }

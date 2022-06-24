@@ -1,6 +1,5 @@
 let total = 0;
 let buffer = '0';
-let operator = null;
 
 let tela = document.querySelector('.screen');
 let botoes = document.querySelector('.buttons');
@@ -24,7 +23,6 @@ function simbolo(valor) {
     switch (valor) {
         case 'C':
             buffer = '0';
-            total: 0;
             break;
         case 'del':
             if (buffer.length === 1) {
@@ -33,12 +31,11 @@ function simbolo(valor) {
                 buffer = buffer.substring(0, buffer.length - 1);
             }
             break;
-        // EM CONSTRUÇAO
         case '=':
-            console.log('resultado ' + buffer);
+            buffer = eval(buffer);
             break;
         default:
-            calcular(valor);
+            buffer += valor;
             break;
     }
 }
@@ -59,44 +56,6 @@ function atualizar() {
         setTimeout(gado, 500);
     } else if (tela.innerText === '2020') {
         setTimeout(secret, 500);
-    }
-}
-
-/*calcular CONSTRUÇAO
-function fazerConta(valor) {
-    console.log(`valorconta ${valor}`);
-
-    if (total === 0) {
-        total = parseInt(buffer);
-        console.log(`total ${parseInt(buffer)}`);
-    } else {
-        console.log('vou calcular');
-        calcular(parseInt(buffer));
-    }
-    operator = valor;
-    buffer = '0';
-}*/
-
-// operacoes EM CONSTRUÇAO
-function calcular(valor) {
-    let num = parseInt(buffer);
-    console.log('parseint' + parseInt(buffer));
-    console.log('total ' + total);
-    switch (valor) {
-        case '+':
-            num += parseInt(buffer);
-            console.log('soma', total);
-            buffer = num;
-            break;
-        case '-':
-            total -= parseInt(buffer);
-            break;
-        case '*':
-            total *= parseInt(buffer);
-            break;
-        case '/':
-            total /= parseInt(buffer);
-            break;
     }
 }
 

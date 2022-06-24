@@ -1,4 +1,3 @@
-let total = 0;
 let buffer = '0';
 
 let tela = document.querySelector('.screen');

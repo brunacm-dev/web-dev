@@ -6,8 +6,8 @@
     --black: #262626;
     --white: #dedbdb;
     --purple: #7756bf;
-    --font1: "Righteous", cursive;
-    --font2: "Patrick Hand", cursive;
+    --font1: 'Righteous', cursive;
+    --font2: 'Patrick Hand', cursive;
 }
 
 html {
@@ -74,46 +74,70 @@ body {
     margin: 30px;
     text-align: center;
 }
+
 .calculator h3 {
     font-family: var(--font1);
     border: 2px solid var(--watergreen);
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
 .buttons__box {
     font-size: 0;
     max-width: 100%;
+    min-width: 400px;
+    margin: auto;
 }
+
 .button {
     margin: 0;
     width: 100px;
     height: 60px;
     border: 2px solid var(--blue);
     color: var(--purple);
+    font-family: var(--font1);
 }
+
 .button:hover {
     background-color: lightgray;
+}
+
+.button:active {
+    background-color: rgb(181, 181, 181);
 }
 
 .screen {
     width: 400px;
     height: 60px;
+    background-color: #787575;
     text-align: right;
-    font-size: medium;
-    padding-right: 10px;
+    font-family: var(--font1);
+    font-size: large;
+    padding: 15px;
     border: 2px solid var(--blue);
     color: var(--white);
+    margin: auto;
+    margin-top: 20px;
 }
 
 .op {
     background-color: var(--purple);
     color: var(--black);
 }
+
 .op:hover {
-    background-color: var(--lightgreen);
+    background-color: #8e6add;
+}
+
+.op:active {
+    background-color: #6749a8;
 }
 
 .clear {
     width: 200px;
 }
+
 .zero {
     width: 300px;
 }

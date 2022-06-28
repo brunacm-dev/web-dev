@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Teste 1</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header__title">
-        <h1>Este é um site teste</h1>
-        <h2>
-          Será <span>atualizado</span> continuamente a medida que for evoluindo
-        </h2>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
 
-      <nav class="header__nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bio.html">Biografia</a></li>
-          <li><a href="contact.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="header">
 
-    <section class="section">
-      <div class="section__title">Pagina Home</div>
-      <div class="section__triple">triple-section em construção</div>
-      <div class="section__lower">lower-section em construção</div>
+    <section class="header__intro">
+      <h2> Eu sou a <span class="header__intro name">Bruna</span></h2>
+      <h2> Sou estagiária dev da área de <span class="header__intro area">Player Web</span> </h2>
+      <p> Também curso Sistemas de Informação na UFF </p>
     </section>
 
-    <footer class="footer">
-      <div class="footer__nav">
-        <ul>
-          <li>Home Footer</li>
-          <li>Contato Footer</li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bio.html">Biografia</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section__projects">
+    <h2>Alguns projetos</h2>
+    <div class="section__part">
+      <div class="part parte-a">a</div>
+      <div class="part parte-b">b</div>
+      <div class="part parte-c">c</div>
+    </div>
+  </section>
+  <section class="section__contact">
+    <h2> Você pode me encontrar em:</h2>
+    <p>
+      <a class="link" href="https://github.com/brunacm77/">Github</a>
+      <a class="link" href="https://br.linkedin.com/in/brunacm">Linkedn</a>
+      <a class="link" href="https://www.instagram.com/bruna.lee/">Instagram</a>
+    </p>
+  </section>
+
+
+
+  <footer class="footer">
+    <p>Created by Bruna Moraes &copy 2022</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

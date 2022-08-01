@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Teste 1</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="root.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&display=swap"
+            rel="stylesheet"
+        />
+        <title>Contato</title>
+    </head>
 
-  <body>
-    <header class="header">
-      <div class="header__title">
-        <h1>Este é um site teste</h1>
-        <h2>
-          Será <span>atualizado</span> continuamente a medida que for evoluindo
-        </h2>
-      </div>
-
-      <nav class="header__nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bio.html">Biografia</a></li>
-          <li><a href="contact.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="section">
-      <div class="section__title">Pagina de Contato</div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer__nav">
-        <ul>
-          <li>Home Footer</li>
-          <li>Contato Footer</li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+    <body>
+        <header class="header">
+            <section class="header__social-icon">
+                <p>
+                    <a class="link" href="https://github.com/brunacm77/"
+                        ><img
+                            class="icon"
+                            src="assets/icons/github-brands.svg"
+                        />
+                    </a>
+                    <a class="link" href="https://br.linkedin.com/in/brunacm"
+                        ><img
+                            class="icon"
+                            src="assets/icons/linkedin-brands.svg"
+                        />
+                    </a>
+                    <a class="link" href="https://www.instagram.com/bruna.lee/"
+                        ><img
+                            class="icon"
+                            src="assets/icons/instagram-brands.svg"
+                        />
+                    </a>
+                </p>
+            </section>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="menu__item">
+                        <a href="index.html">Home |</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="bio.html"> Biografia |</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact.html">Contato |</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script src="script-change-menu.js"></script>
+    </body>
 </html>

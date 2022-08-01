@@ -5,16 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="root.css" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style-calc.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&display=swap"
             rel="stylesheet"
         />
-        <title>Biografia</title>
-    </head>
-    <body>
-        <header class="header">
+        <title>Calculadora</title>
+<body>
+    <header class="header">
             <section class="header__social-icon">
                 <p>
                     <a class="link" href="https://github.com/brunacm77/"
@@ -51,6 +51,48 @@
                 </ul>
             </nav>
         </header>
+        <section class="calculator">
+
+        <div class="display">
+            <h3>Calculator</h3>
+            <div class="screen">0</div>
+        </div>
+
+        <div class="buttons">
+
+            <div class="buttons__box">
+                <button class="button clear"> C </button>
+                <button class="button del"> del </button>
+                <button class="button op">/</button>
+            </div>
+
+            <div class="buttons__box">
+                <button class="button" value="7"> 7 </button>
+                <button class="button" value="8"> 8 </button>
+                <button class="button" value="9"> 9 </button>
+                <button class="button op">*</button>
+            </div>
+
+            <div class="buttons__box">
+                <button class="button" value="4"> 4 </button>
+                <button class="button" value="5"> 5 </button>
+                <button class="button" value="6"> 6 </button>
+                <button class="button op">-</button>
+            </div>
+
+            <div class="buttons__box">
+                <button class="button" value="1"> 1 </button>
+                <button class="button" value="2"> 2 </button>
+                <button class="button" value="3"> 3 </button>
+                <button class="button op">+</button>
+            </div>
+
+            <div class="buttons__box">
+                <button class="button zero" value="0"> 0 </button>
+                <button class="button op">=</button>
+            </div>
+        </div>
         <script src="script-change-menu.js"></script>
-    </body>
+        <script src="script-calc.js"></script>
+</body>
 </html>

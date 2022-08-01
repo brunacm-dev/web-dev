@@ -1,57 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="root.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&display=swap"
+            rel="stylesheet"
+        />
+        <title>Portfolio</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&display=swap" rel="stylesheet">
-  <title>Portfolio</title>
-</head>
+    <body>
+        <header class="header">
+            <section class="header__social-icon">
+                <p>
+                    <a class="link" href="https://github.com/brunacm77/"
+                        ><img
+                            class="icon"
+                            src="assets/icons/github-brands.svg"
+                        />
+                    </a>
+                    <a class="link" href="https://br.linkedin.com/in/brunacm"
+                        ><img
+                            class="icon"
+                            src="assets/icons/linkedin-brands.svg"
+                        />
+                    </a>
+                    <a class="link" href="https://www.instagram.com/bruna.lee/"
+                        ><img
+                            class="icon"
+                            src="assets/icons/instagram-brands.svg"
+                        />
+                    </a>
+                </p>
+            </section>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="menu__item">
+                        <a href="index.html">Home |</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="bio.html"> Biografia |</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact.html">Contato |</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-  <header class="header">
+        <div class="main">
+            <section class="intro">
+                <h2>
+                    Eu sou a <span>Bruna</span><br />
 
-    <section class="header__intro">
-      <h2> Eu sou a <span class="header__intro name">Bruna</span></h2>
-      <h2> Sou estagiária dev da área de <span class="header__intro area">Player Web</span> </h2>
-      <p> Também curso Sistemas de Informação na UFF </p>
-    </section>
+                    Sou estagiária dev da área de
+                    <span>Player Web</span>
+                </h2>
+                <p>Também curso Sistemas de Informação na UFF</p>
+            </section>
 
-    <nav class="header__nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bio.html">Biografia</a></li>
-        <li><a href="contact.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+            <section class="projects">
+                <h2>-- Projetos em JavaScript --</h2>
+                <nav class="projects__nav">
+                    <ul class="projects__menu">
+                        <li class="projects__item">
+                            <a href="/calculadora.html">Calculadora</a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#">Books</a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#">Projeto3</a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#">Projeto4</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
 
-  <section class="section__projects">
-    <h2>Alguns projetos</h2>
-    <div class="section__part">
-      <div class="part parte-a">a</div>
-      <div class="part parte-b">b</div>
-      <div class="part parte-c">c</div>
-    </div>
-  </section>
-  <section class="section__contact">
-    <h2> Você pode me encontrar em:</h2>
-    <p>
-      <a class="link" href="https://github.com/brunacm77/">Github</a>
-      <a class="link" href="https://br.linkedin.com/in/brunacm">Linkedn</a>
-      <a class="link" href="https://www.instagram.com/bruna.lee/">Instagram</a>
-    </p>
-  </section>
-
-
-
-  <footer class="footer">
-    <p>Created by Bruna Moraes &copy 2022</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+        <footer class="footer">
+            <p>Created by Bruna Moraes &copy 2022</p>
+        </footer>
+    </body>
 </html>

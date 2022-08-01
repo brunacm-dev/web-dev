@@ -1,0 +1,38 @@
+/* ### GENERAL ###*/
+:root {
+    --blue: #2e4159;
+    --blue2: #2f2272;
+    --black: #262626;
+    --gray: rgb(59, 55, 55);
+    --darker-gray: rgb(36, 34, 34);
+    --watergreen: #4ad9b0;
+    --lightgreen: #38a687;
+    --white: #dedbdb;
+    --purple: #7756bf;
+    --purple2: #26045b;
+    --purple3: #413d52;
+    --pink: rgb(220, 147, 220);
+    --aliceblue: aliceblue;
+    --font1: 'Righteous', cursive;
+    --font2: 'Patrick Hand', cursive;
+    --font-size: 62, 5%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--darker-gray);
+    color: var(--white);
+    font-family: var(--font1);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}

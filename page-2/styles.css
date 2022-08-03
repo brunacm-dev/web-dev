@@ -24,6 +24,7 @@ body {
 .article__container {
     display: flex;
     align-items: stretch;
+    min-width: 1200px;
 }
 .article__box {
     border: 1px solid black;

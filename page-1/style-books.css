@@ -1,0 +1,16 @@
+.texto {
+    margin: 30px;
+    font-size: 1.5em;
+}
+.books__resultado {
+    text-align: center;
+    margin: 30px;
+}
+
+.button {
+    padding: 0.7em;
+    font-family: var(--font1);
+    font-size: 1.2em;
+    margin: 20px;
+    cursor: pointer;
+}
